@@ -1,0 +1,116 @@
+.shop-page {
+  padding: 60px 0;
+  font-family: 'Arial', sans-serif;
+}
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.header h1 {
+  font-size: 3rem;
+  color: #212529;
+}
+.header p {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+.categories, .featured-products, .cart-summary {
+  padding: 60px 0;
+  text-align: center;
+  color: #212529;
+  background: #f8f9fa;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.category-card, .product-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+  height: 400px;
+}
+.category-image, .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.cart-summary {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.checkout-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: blue;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.checkout-btn:hover {
+  background-color: #3c3142;
+}
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.form-select {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.card-title:hover{
+  color: cadetblue;
+  cursor: grab;
+  transition: all 0.5s;
+}
+.card-title{
+  background-color:aliceblue;
+  /* height:50px; */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-text{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+.discounted-price {
+  color: #e74c3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.modal{
+  text-align: center;
+}
+.pricemodal{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,51 @@
+.about-us {
+  background: linear-gradient(to right, #54456b, #d3bbe8);
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-image: url('https://img.pikbest.com/wp/202348/bookstore-books-virtual-3d-illustration-of-online-shopping-for-on-a-smartphone_9778006.jpg!w700wp');
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.row {
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #54456b, #d3bbe8);
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

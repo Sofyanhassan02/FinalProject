@@ -1,0 +1,61 @@
+<div class="container mt-5">
+  <div class="col-md-12 d-flex justify-content-center">
+    <h1>Our Shop</h1>
+    <hr>
+  </div>
+  <div class="row mb-4">
+    <div class="col-md-12 d-flex justify-content-end">
+      <select class="form-select w-auto" (change)="sortBooks($event)">
+        <option value="" disabled selected>Sort By</option>
+        <option value="title">Title</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let book of books">
+      <div class="card mb-4 shadow-sm custom-card">
+        <img class="card-img-top" [src]="book.image" alt="{{ book.title }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ book.title }}</h5>
+          <hr>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary" (click)="setSelectedBook(book)" data-bs-toggle="modal" data-bs-target="#bookModal">
+                View
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-secondary" (click)="addToCart(book)">
+                Add to Cart
+              </button>
+            </div>
+            <div class="price-container">
+              <span class="original-price">100$</span>
+              <span class="discounted-price">{{ book.price | currency }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookModalLabel">{{ selectedBook?.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img [src]="selectedBook?.image" alt="{{ selectedBook?.title }}" class="img-fluid mb-2">
+        <p><strong>Subtitle:</strong> {{ selectedBook?.subtitle }}</p>
+        <p><strong>Description:</strong>Computer programming is the process of writing code to facilitate specific actions in a computer, application or software program, and instructs them on how to perform.        </p>
+        <p class="pricemodal"><strong>Price:</strong> {{ selectedBook?.price | currency }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="addToCart(selectedBook)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.form-control {
+  font-size: 1rem;
+}
+
+.login-link,
+.nav-link.bg-warning {
+  color: #f8f9fa;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.login-link:hover,
+.nav-link.bg-warning:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}

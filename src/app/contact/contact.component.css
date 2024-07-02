@@ -1,0 +1,67 @@
+.whole {
+  background-image: url('https://cdn.pixabay.com/photo/2016/01/27/04/32/books-1163695_640.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 60px 0;
+}
+
+.whole::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay, adjust opacity as needed */
+  z-index: 1;
+}
+
+.row {
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+}
+
+.card-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.btn-primary {
+  background-color: #343a40;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #495057;
+}
